@@ -14,14 +14,10 @@ var rootCmd *cobra.Command
 func newRootCmd() *cobra.Command {
 	return &cobra.Command{
 		Use:   "aggregate_errors",
-		Short: "A brief description of your application",
-		Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+		Short: "Aggregate Errors and Review them",
+		Long:  ``,
 		RunE: func(cmd *cobra.Command, args []string) error {
+			// TODO: 初期化処理
 			return nil
 		},
 	}
@@ -39,6 +35,7 @@ func Execute() {
 	}
 }
 
+// TODO: フラグ関連の処理を追加する
 func init() {
 	// cobra.OnInitialize(initConfig)
 	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.aggregate_errors.yaml)")
